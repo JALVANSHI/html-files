@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my project</title>
+</head>
+<style>
+    body{
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-color:blueviolet;
+    }
+    .left{
+        position: absolute;
+        display: inline-block;
+        border: 2px solid brown;
+        left: 32px;
+        top: 20px;
+    }
+    .left div{
+        text-align: center;
+        color: rgb(0, 255, 30);
+    }
+    .mid{
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+        border: 2px solid blue;
+        border-radius: 12px;
+    }
+    .right{
+        position: absolute;
+        right: 32px;
+        top: 20px;
+        display: inline-block;
+        border: 2px solid greenyellow
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar li a{
+        text-decoration: none;
+        color: white;
+        padding: 50px 30px;
+    }
+    .navbar li a:hover,.navbar li a.active{
+        text-decoration: underline;
+        color:grey;
+
+    }
+    .container{
+        margin:30px 4px ;
+        padding:3px 3px ;
+        width:47%  ;
+        border: 3px solid red;
+        position: absolute;
+        top: 200px;
+        left: 4%;
+        border-radius: 10px;
+    }
+    .form-group input{
+        display: block;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <header>
+        <!--this is for logo-->
+    <div class="left">
+        <div>Star Gym</div>
+        <img src="gymlogo.jpg" alt="rbs"width="100"> 
+        
+    </div>
+    <!--this is for navigationbar-->
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="https://www.puregym.com/join/">Home</a></li>
+            <li><a href="images1.jpg">About</a></li>
+            <li><a href="https://prod-ne-cdn-media.puregym.com/media/812032/collage_update_11-21-2x.jpg?mode=pad&width=2500">Fitness </a></li>
+            <li><a href="images/download (3).jpg">contact</a></li>
+        </ul>
+    </div>
+    <!--this is for buttons-->
+    <div class="right">
+    <button class="btn">call us now </button><button class="btn">email us</button>
+    </div>
+    <div class="container">
+        <h2>join the best Gym of this city</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+               Name  : <input type="text" name="" placeholder="enter your name">
+            </div>
+            <div class="form-group">
+               Email : <input type="Email" name="" placeholder="enter your Email">
+            </div>
+            <div class="form-group">
+               age   : &nbsp;&nbsp;   <input type="number" name="" placeholder="enter your age">
+            </div>
+            <div class="form-group">
+               Mob no.: <input type="number" name="" placeholder="enter your mob no.">
+            </div>
+            <div class="form-group">
+                Gender:  male <input type="Radio" name="my gender"> female<input type="Radio" name="my gender"> other <input
+                    type="radio" name="my gender">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="submit now"> <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
