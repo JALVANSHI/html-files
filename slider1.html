@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image slider</title>
+    <style>
+        body{
+            background-color:slategray;
+            font-family: sans-serif;
+        }
+        .slider{
+            max-width: 800px;
+            border: 10px solid white;
+            margin: 50px auto;
+            position: relative;
+        }
+        .slider .left-slide,.slider .right-slide{
+            position: absolute;
+            width: 60px;
+            height: 40px;
+            background-color: navajowhite;
+            cursor: progress;
+            border-radius: 50%;
+            color: green;
+            font-size: 20px;
+            top: 50%;
+            margin-top: -20px;
+            cursor: pointer;
+            text-align: center;
+            line-height: 40px;
+            transition: all .5s ease-in;
+
+        }
+        .slider .left-slide:hover,.slider .right-slide:hover{
+            background-color: blue;
+        }
+        .slider .left-slide{
+            left: 30px;
+        }
+        .slider .right-slide{
+            right: 30px;
+        }
+      
+        .slider .slider-items .item img{
+            max-width: 800px;
+            display: block;
+        }
+        .slider .slider-items .item{
+            display: none;
+            position: relative;
+        }
+        .slider .slider-items .item.active{
+            display: block;
+        }
+        .slider .slider-items .item .caption{
+            position: absolute;
+            width: 100%;
+            height: 60px;
+            bottom: 0px;
+            left: 0px;
+            text-align: center;
+            background-color: blueviolet;
+            color: brown;
+            font-size: 30px;
+            line-height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slider-items">
+            <div class="item active">
+                <img src="ravi16.JPG" alt="">
+                <div class="caption">
+                    slide 1
+                </div>
+            </div>
+            <div class="item">
+                <img src="ravi19.JPG" alt="">
+                <div class="caption">
+                    slide 2
+                </div>
+            </div>
+            <div class="item">
+                <img src="ravi21.JPG" alt="">
+                <div class="caption">
+                    slide 3
+                </div>
+            </div>
+            <div class="item">
+                <img src="ravi22.JPG" alt="">
+                <div class="caption">
+                    slide 4
+                </div>
+            </div>
+        </div>
+            <div class="left-slide">&lt</div>
+            <div class="right-slide">&gt;</div>
+    </div>
+    <script src="js/slider1.js"> </script>
+</body>
+</html>
